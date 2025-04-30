@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa tou Lófou</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; color: #333; line-height: 1.6; }
+    header { background: url('hero.jpg') center/cover no-repeat; height: 70vh; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.7); text-align: center; padding: 1em; }
+    header h1 { font-size: 3em; margin: 0; }
+    .section { padding: 4em 2em; max-width: 1000px; margin: auto; }
+    .features { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; }
+    .feature { flex: 1 1 200px; background: #f7f7f7; padding: 1em; border-radius: 8px; text-align: center; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; }
+    .gallery img { width: 100%; border-radius: 8px; }
+    footer { background: #222; color: white; text-align: center; padding: 2em; }
+    .btn { background: #008080; color: white; padding: 0.75em 1.5em; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1em; }
+    form { display: flex; flex-direction: column; gap: 1em; max-width: 500px; margin: auto; }
+    input, textarea { padding: 0.75em; border-radius: 4px; border: 1px solid #ccc; }
+    input[type="submit"] { background-color: #008080; color: white; border: none; cursor: pointer; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .section { padding: 2em 1em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Villa tou Lófou</h1>
+      <a class="btn" href="#contact">Boek nu</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Welkom bij Villa tou Lófou</h2>
+    <p>Een idyllische uitvalsbasis in de heuvels van Cyprus, perfect voor rustzoekers, wandelaars en liefhebbers van natuur en cultuur. Geniet van authentiek comfort in een sfeervol ingericht appartement in het charmante dorpje Lofou.</p>
+  </section>
+
+  <section class="section">
+    <h2>Faciliteiten</h2>
+    <div class="features">
+      <div class="feature">2 slaapkamers</div>
+      <div class="feature">Volledig uitgeruste keuken</div>
+      <div class="feature">Airconditioning</div>
+      <div class="feature">Gratis wifi</div>
+      <div class="feature">Privéterras met uitzicht</div>
+      <div class="feature">Parkeerplaats</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Fotogalerij</h2>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Interieur">
+      <img src="foto2.jpg" alt="Uitzicht">
+      <img src="foto3.jpg" alt="Slaapkamer">
+      <img src="foto4.jpg" alt="Terras">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Boeken & Prijzen</h2>
+    <p>Vanaf €95 per nacht. Voor actuele beschikbaarheid en reserveringen kun je contact met ons opnemen via onderstaand formulier of een bericht sturen via WhatsApp.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact & Reserveren</h2>
+    <form action="mailto:info@villatoulofou.com" method="POST" enctype="text/plain">
+      <input type="text" name="naam" placeholder="Je naam" required>
+      <input type="email" name="email" placeholder="Je e-mailadres" required>
+      <textarea name="bericht" rows="5" placeholder="Je bericht of reserveringsverzoek" required></textarea>
+      <input type="submit" value="Verstuur">
+    </form>
+    <p style="text-align:center; margin-top: 2em;">Of neem contact op via WhatsApp: <strong>+357 99 123 456</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Villa tou Lófou. Alle rechten voorbehouden.</p>
+  </footer>
+</body>
+</html>
